@@ -34,15 +34,15 @@ mvn package will create the jar file which can be run using java -cp
 
 ## Project Class
 
-Domain Classes
+### Domain Classes
 * Contact
 
-Controller Classes
+### Controller Classes
 
 * AddressBookController
   Contains the implementation of all operation create/delete, get unique contacts, maintain mutiple address book
 
-Core Classes
+### Core Classes
 
 *AddressBook
   Contains the list of contacts and name of address book.
@@ -51,7 +51,7 @@ Core Classes
   
 Test Classes
 
-*AddContactTest
+* AddContactTest
 *AddressBookAddContactTest
   Test the contact addition
 *AddressBookControllerTest
