@@ -9,81 +9,70 @@ Before starting project you need to install
 * JDK 1.8
 
 ### Prerequisites
+Set both the JDK1.8 and Maven 3.5.0 classpath
 
-What things you need to install the software and how to install them
 
-```
-Give examples
-```
+### Runnig
 
-### Installing
+In order to run the project go to the source folde rin teh command prompt
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
 
 ```
-Give the example
+mvn package
 ```
 
-And repeat
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+mvn package command will run all the test cases with result
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+mvn package will create the jar file which can be run using java -cp 
 
-## Built With
+## Project Class
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+#Domain Classes
+* Contact
 
-## Contributing
+#Controller Classes
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+* AddressBookController
+  Contains the implementation of all operation create/delete, get unique contacts, maintain mutiple address book
 
-## Versioning
+#Core Classes
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+*AddressBook
+  Contains the list of contacts and name of address book.
+*SimpleAddressBook
+  Sub class of AddressBook to create the simple address book by name
+#Test Classes
+
+*AddContactTest
+*AddressBookAddContactTest
+  Test the contact addition
+*AddressBookControllerTest
+  test the operations defined in the controller
+*AddressBookRemoveContactTest
+  Test only the remove contacts
+*CompareContactTest
+  Test comparision of objects using compareTo method defined in the contact class
+  
+#compareTo()
+  Compares two Contacts lexicographically based on the contact name and if the names are equal compares the contact phone numbers.
+	 The comparison is based on the Unicode value of each character in the contact name String and contact phone number String.
+	 Comparison ignores case considerations.
+	  @return 0 if contacts are equal, greater than 0 if this Contact is greater than specified Contact, and less
+	  than 0, otherwise.
+	  For Example:
+	  returns 0 this Contact("carl", "098765") and specified Contact("CARL", "098765")
+	  returns greater than 0 this Contact("David", "043214567") and specified Contact("David", "9999999999")
+	  returns less than 0 this Contact("Miller", "9999999999") and specified Contact("Miller", "0422435655")
+	 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Farhan Rayani** - *Initial work* - (https://github.com/farhanrayani)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
