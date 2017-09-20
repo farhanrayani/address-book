@@ -1,4 +1,4 @@
-package com.reece.addressbook.service;
+package com.reece.addressbook.core;
 
 import java.util.ArrayList;
 import java.util.List;

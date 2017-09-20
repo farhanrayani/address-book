@@ -10,8 +10,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.reece.addressbook.controller.AddressBookController;
+import com.reece.addressbook.core.AddressBook;
 import com.reece.addressbook.model.Contact;
-import com.reece.addressbook.service.AddressBook;
 
 public class AddressBookControllerTest {
 

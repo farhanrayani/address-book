@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
+import com.reece.addressbook.core.AddressBook;
 import com.reece.addressbook.model.Contact;
-import com.reece.addressbook.service.AddressBook;
 
 public class AddressBookController {
 

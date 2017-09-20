@@ -3,9 +3,10 @@ package com.reece.addressbook.AddressBook;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.reece.addressbook.core.AddressBook;
+import com.reece.addressbook.core.SimpleAddressBook;
 import com.reece.addressbook.model.Contact;
-import com.reece.addressbook.service.AddressBook;
-import com.reece.addressbook.service.SimpleAddressBook;
 
 public class AddressBookAddContactTest {
 

@@ -1,4 +1,4 @@
-package com.reece.addressbook.service;
+package com.reece.addressbook.core;
 
 import java.io.Serializable;
 
