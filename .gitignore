@@ -1,33 +1,52 @@
-# .gitignore for Grails 1.2 and 1.3
-# Although this should work for most versions of grails, it is
-# suggested that you use the "grails integrate-with --git" command
-# to generate your .gitignore file.
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-# web application files
-/web-app/WEB-INF/classes
+# Folder config file
+Desktop.ini
 
-# default HSQL database files for production mode
-/prodDb.*
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# general HSQL database files
-*Db.properties
-*Db.script
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
 
-# logs
-/stacktrace.log
-/test/reports
-/logs
+# Windows shortcuts
+*.lnk
 
-# project release file
-/*.war
+# =========================
+# Operating System Files
+# =========================
 
-# plugin release files
-/*.zip
-/plugin.xml
+# OSX
+# =========================
 
-# older plugin install locations
-/plugins
-/web-app/plugins
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# "temporary" build files
-/target
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+.settings
+.class
+.properties
+target/
