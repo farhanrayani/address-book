@@ -1,8 +1,10 @@
-# Capdominus
+# Installation
 
-##### r4.7.3 (Latest Release)
+Download the followings:
 
-* SHA: 
+* Jdk 1.8
+* Maven 4.3
+
 
 ##### r3.0.0
 
