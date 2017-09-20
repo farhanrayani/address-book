@@ -34,21 +34,22 @@ mvn package will create the jar file which can be run using java -cp
 
 ## Project Class
 
-#Domain Classes
+Domain Classes
 * Contact
 
-#Controller Classes
+Controller Classes
 
 * AddressBookController
   Contains the implementation of all operation create/delete, get unique contacts, maintain mutiple address book
 
-#Core Classes
+Core Classes
 
 *AddressBook
   Contains the list of contacts and name of address book.
 *SimpleAddressBook
   Sub class of AddressBook to create the simple address book by name
-#Test Classes
+  
+Test Classes
 
 *AddContactTest
 *AddressBookAddContactTest
@@ -60,7 +61,7 @@ mvn package will create the jar file which can be run using java -cp
 *CompareContactTest
   Test comparision of objects using compareTo method defined in the contact class
   
-#compareTo()
+compareTo()
   Compares two Contacts lexicographically based on the contact name and if the names are equal compares the contact phone numbers.
 	 The comparison is based on the Unicode value of each character in the contact name String and contact phone number String.
 	 Comparison ignores case considerations.
